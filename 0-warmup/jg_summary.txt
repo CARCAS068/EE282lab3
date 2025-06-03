@@ -1,0 +1,46 @@
+
+==============================================================
+    Jasper Verification Results
+==============================================================
+    2023.12p001 64 bits for Linux64 3.10.0-1160.21.1.el7.x86_64
+    Host Name: caddy14.stanford.edu
+    User Name: ccarrete
+    Printed on: Friday, May30, 2025 10:28:57 PM PDT
+    Working Directory: /home/users/ccarrete/cva6-formal/0-warmup
+
+
+==============================================================
+SUMMARY
+==============================================================
+    Total Tasks           : 1
+    Total Properties      : 3
+          assumptions     : 1                   
+           - approved     : 0                   ( 0.0% )
+           - temporary    : 1                   ( 100.0% )
+          assertions      : 1                   
+           - proven       : 0                   ( 0.0% )
+           - marked_proven: 0                   ( 0.0% )
+           - cex          : 1                   ( 100.0% )
+           - ar_cex       : 0                   ( 0.0% )
+           - undetermined : 0                   ( 0.0% )
+           - unprocessed  : 0                   ( 0.0% )
+           - error        : 0                   ( 0.0% )
+          covers          : 1                   
+           - unreachable  : 0                   ( 0.0% )
+           - covered      : 1                   ( 100.0% )
+           - ar_covered   : 0                   ( 0.0% )
+           - undetermined : 0                   ( 0.0% )
+           - unprocessed  : 0                   ( 0.0% )
+           - error        : 0                   ( 0.0% )
+
+==============================================================
+RESULTS
+==============================================================
+
+---------------------------------------------------------------------------------------
+       Name                           |    Result    |  Engine  |  Bound  |  Time    
+---------------------------------------------------------------------------------------
+
+---[ <embedded> ]----------------------------------------------------------------------
+[1]   counter.data_bus_nonzero             covered         PRE           1    0.000 s      
+[2]   counter.output_never_error           cex             Ht            5    0.005 s      
